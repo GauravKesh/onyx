@@ -1,0 +1,60 @@
+.main {
+    background-color: rgb(105, 155, 200);
+    width: 100%;
+    height: 100vh;
+}
+
+.main-c {
+    background-color: rgb(174, 183, 190);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part1 {
+
+    background-color: rgb(59 91 123);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction:row;
+    align-self: auto;
+
+
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.part1-1 {
+    width:252.5px;
+     height: 57.5px ;
+     top: 80px ;
+     left: 80px;
+      gap: 12px;
+}
+.part1-2 {
+    width:252.5px;
+     height: 57.5px ;
+     top: 80px ;
+     left: 80px;
+      gap: 12px;
+}
+
+
+.part2 {
+    background-color: rgb(105, 155, 200);
+    width: 100%;
+    height: 100vh;
+   
+}
+
+.part3 {
+    background-color: rgb(81, 146, 196);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
