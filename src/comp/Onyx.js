@@ -1,98 +1,404 @@
 import React from 'react';
 import '../comp/onyx.css';
 
+
+
 export default function Onyx() {
     return (
-        <div className="main">
-            <div className="main-c" >
+        <div className='main'>
+            <div className='main-c'>
                 <div className="part1">
-                    <div className="part1-1">
-                        <div className="val">
-                            <div className="logo"></div>
-                            <span style={{ fontSize: "40px" }}><b>Seren</b>.com</span>
+                    <div className="logo">
+                        <div className="lfrm"><svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
+                            <rect width="57.5" height="57.5" rx="28.75" fill="#188B68" />
+                            <path d="M28.4242 16.675L20.7684 29.7664H14.95C15.0011 25.4026 17.7673 16.675 28.4242 16.675C28.4743 16.675 28.5242 16.6752 28.5739 16.6757C38.3783 16.763 41.543 25.4247 41.8985 29.7664L36.0035 29.843L28.5739 16.6757C28.5242 16.6752 28.4743 16.675 28.4242 16.675Z" fill="#E0F2EE" />
+                            <path d="M36.0035 29.843H20.6153L14.95 39.7956H41.7453L36.0035 29.843Z" fill="#E0F2EE" />
+                        </svg></div>
+                        <div className="txt">
+                            <div className="sen">seren</div>
+                            <div className="com">.com</div>
+                        </div>
+                    </div>
+                    <div className="frm131">
+                        <div className="frm130">
+                            <div className="fico"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M17.3333 10.6667V5.33334C17.3333 4.95556 17.4613 4.63867 17.7173 4.38267C17.9733 4.12667 18.2898 3.99912 18.6667 4H26.6667C27.0445 4 27.3613 4.128 27.6173 4.384C27.8733 4.64 28.0009 4.95645 28 5.33334V10.6667C28 11.0444 27.872 11.3613 27.616 11.6173C27.36 11.8733 27.0436 12.0009 26.6667 12H18.6667C18.2889 12 17.972 11.872 17.716 11.616C17.46 11.36 17.3324 11.0436 17.3333 10.6667ZM4 16V5.33334C4 4.95556 4.128 4.63867 4.384 4.38267C4.64 4.12667 4.95645 3.99912 5.33334 4H13.3333C13.7111 4 14.028 4.128 14.284 4.384C14.54 4.64 14.6676 4.95645 14.6667 5.33334V16C14.6667 16.3778 14.5387 16.6947 14.2827 16.9507C14.0267 17.2067 13.7102 17.3342 13.3333 17.3333H5.33334C4.95556 17.3333 4.63867 17.2053 4.38267 16.9493C4.12667 16.6933 3.99912 16.3769 4 16ZM17.3333 26.6667V16C17.3333 15.6222 17.4613 15.3053 17.7173 15.0493C17.9733 14.7933 18.2898 14.6658 18.6667 14.6667H26.6667C27.0445 14.6667 27.3613 14.7947 27.6173 15.0507C27.8733 15.3067 28.0009 15.6231 28 16V26.6667C28 27.0445 27.872 27.3613 27.616 27.6173C27.36 27.8733 27.0436 28.0009 26.6667 28H18.6667C18.2889 28 17.972 27.872 17.716 27.616C17.46 27.36 17.3324 27.0436 17.3333 26.6667ZM4 26.6667V21.3333C4 20.9556 4.128 20.6387 4.384 20.3827C4.64 20.1267 4.95645 19.9991 5.33334 20H13.3333C13.7111 20 14.028 20.128 14.284 20.384C14.54 20.64 14.6676 20.9564 14.6667 21.3333V26.6667C14.6667 27.0445 14.5387 27.3613 14.2827 27.6173C14.0267 27.8733 13.7102 28.0009 13.3333 28H5.33334C4.95556 28 4.63867 27.872 4.38267 27.616C4.12667 27.36 3.99912 27.0436 4 26.6667Z" fill="#757575" />
+                            </svg></div>
+                            <div className="ftxt">Dashboard</div>
+                        </div>
+                    </div>
+
+                    <div className="frm132">
+                        <div className="frm132-1">
+                            <div className="frm321logo"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M16 29.3333C14.3333 29.3333 12.772 29.0164 11.316 28.3827C9.85999 27.7489 8.59332 26.8938 7.51599 25.8173C6.43865 24.7391 5.58354 23.4724 4.95065 22.0173C4.31777 20.5622 4.00088 19.0009 3.99999 17.3333C3.99999 15.6667 4.31688 14.1053 4.95065 12.6493C5.58443 11.1933 6.43954 9.92667 7.51599 8.84933C8.59421 7.772 9.86088 6.91689 11.316 6.284C12.7711 5.65111 14.3324 5.33422 16 5.33333C17.6667 5.33333 19.228 5.65022 20.684 6.284C22.14 6.91778 23.4067 7.77333 24.484 8.85067C25.5613 9.928 26.4169 11.1947 27.0507 12.6507C27.6844 14.1067 28.0009 15.6676 28 17.3333C28 19 27.6831 20.5613 27.0493 22.0173C26.4155 23.4733 25.5604 24.74 24.484 25.8173C23.4058 26.8947 22.1391 27.7502 20.684 28.384C19.2289 29.0178 17.6675 29.3342 16 29.3333ZM19.7333 22.9333L21.6 21.0667L17.3333 16.8V10.6667H14.6667V17.8667L19.7333 22.9333ZM7.46665 3.13333L9.33332 5L3.66665 10.6667L1.79999 8.8L7.46665 3.13333ZM24.5333 3.13333L30.2 8.8L28.3333 10.6667L22.6667 5L24.5333 3.13333Z" fill="#757575" />
+                            </svg>
+
+                            </div>
+                            <div className="frm132txt">
+                                Previous Adventures
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div className="frm133">
+                        <div className="frm133a">
+                            <div className="frm133logo">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="32" viewBox="0 0 28 32" fill="none">
+                                    <g clip-path="url(#clip0_1_32)">
+                                        <path d="M6 9.5V10H3V9.5C3 4.25625 7.25625 0 12.5 0H15.5C20.7437 0 25 4.25625 25 9.5V10H22V9.5C22 5.9125 19.0875 3 15.5 3H12.5C8.9125 3 6 5.9125 6 9.5ZM0 14C0 12.8938 0.89375 12 2 12H26C27.1063 12 28 12.8938 28 14C28 15.1062 27.1063 16 26 16H25.6812L24.2812 29.3125C24.1187 30.8375 22.8312 32 21.3 32H6.7C5.1625 32 3.875 30.8438 3.71875 29.3125L2.31875 16H2C0.89375 16 0 15.1062 0 14Z" fill="#E0F2EE" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_32">
+                                            <rect width="28" height="32" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div className="frm139">
+                                <div className="frm139txt">Bucket List</div>
+                                <div className="cunt">
+                                    <div className="grp">
+                                        <div className="grm">                                        <div className="gtext">
+                                            3
+                                        </div></div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
 
                         </div>
                     </div>
-                    <div className="part1-2">
-                        <div className="d">
-                            <span></span><h1>Dashboard</h1></div>
+                    <div className="frm132">
+                        <div className="frm132-1">
+                            <div className="frm321logo"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M21 16C21 16.9889 20.7068 17.9556 20.1573 18.7779C19.6079 19.6001 18.827 20.241 17.9134 20.6194C16.9998 20.9978 15.9945 21.0969 15.0245 20.9039C14.0546 20.711 13.1637 20.2348 12.4645 19.5355C11.7652 18.8363 11.289 17.9454 11.0961 16.9755C10.9031 16.0055 11.0022 15.0002 11.3806 14.0866C11.759 13.173 12.3999 12.3921 13.2221 11.8427C14.0444 11.2932 15.0111 11 16 11C17.3261 11 18.5979 11.5268 19.5355 12.4645C20.4732 13.4021 21 14.6739 21 16ZM31 8V24C31 24.2652 30.8946 24.5196 30.7071 24.7071C30.5196 24.8946 30.2652 25 30 25H2C1.73478 25 1.48043 24.8946 1.29289 24.7071C1.10536 24.5196 1 24.2652 1 24V8C1 7.73478 1.10536 7.48043 1.29289 7.29289C1.48043 7.10536 1.73478 7 2 7H30C30.2652 7 30.5196 7.10536 30.7071 7.29289C30.8946 7.48043 31 7.73478 31 8ZM29 13.7937C27.8645 13.458 26.8311 12.8435 25.9938 12.0062C25.1565 11.1689 24.542 10.1355 24.2062 9H7.79375C7.45801 10.1355 6.84351 11.1689 6.00623 12.0062C5.16895 12.8435 4.1355 13.458 3 13.7937V18.2062C4.1355 18.542 5.16895 19.1565 6.00623 19.9938C6.84351 20.8311 7.45801 21.8645 7.79375 23H24.2062C24.542 21.8645 25.1565 20.8311 25.9938 19.9938C26.8311 19.1565 27.8645 18.542 29 18.2062V13.7937Z" fill="#757575" />
+                            </svg>
+
+                            </div>
+                            <div className="frm132txt">
+                                Transactions
+                            </div>
+                        </div>
+
 
                     </div>
-                    <div className="part1-3">
-                        <div className="d">
-                            <span></span><h1>Previous Adventure</h1></div>
+
+                    <div className="frm132">
+                        <div className="frm132-1">
+                            <div className="frm321logo"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M18.5 29.3333H13.5C13.1666 29.3333 12.8778 29.2222 12.6333 29C12.3889 28.7778 12.2444 28.5 12.2 28.1667L11.8 25.0667C11.5111 24.9556 11.2391 24.8222 10.984 24.6667C10.728 24.5111 10.4778 24.3444 10.2333 24.1667L7.33332 25.3667C7.0222 25.4778 6.71109 25.4889 6.39998 25.4C6.08887 25.3111 5.84443 25.1222 5.66665 24.8333L3.19998 20.5333C3.0222 20.2444 2.96665 19.9333 3.03332 19.6C3.09998 19.2667 3.26665 19 3.53332 18.8L6.03332 16.9C6.01109 16.7444 5.99998 16.5942 5.99998 16.4493V15.5493C5.99998 15.4053 6.01109 15.2556 6.03332 15.1L3.53332 13.2C3.26665 13 3.09998 12.7333 3.03332 12.4C2.96665 12.0667 3.0222 11.7556 3.19998 11.4667L5.66665 7.16667C5.8222 6.85556 6.06087 6.66089 6.38265 6.58267C6.70532 6.50533 7.0222 6.52222 7.33332 6.63333L10.2333 7.83333C10.4778 7.65556 10.7333 7.48889 11 7.33333C11.2666 7.17778 11.5333 7.04445 11.8 6.93333L12.2 3.83333C12.2444 3.5 12.3889 3.22222 12.6333 3C12.8778 2.77778 13.1666 2.66667 13.5 2.66667H18.5C18.8333 2.66667 19.1222 2.77778 19.3666 3C19.6111 3.22222 19.7555 3.5 19.8 3.83333L20.2 6.93333C20.4889 7.04445 20.7613 7.17778 21.0173 7.33333C21.2724 7.48889 21.5222 7.65556 21.7667 7.83333L24.6666 6.63333C24.9778 6.52222 25.2889 6.51111 25.6 6.6C25.9111 6.68889 26.1555 6.87778 26.3333 7.16667L28.8 11.4667C28.9778 11.7556 29.0333 12.0667 28.9667 12.4C28.9 12.7333 28.7333 13 28.4667 13.2L25.9667 15.1C25.9889 15.2556 26 15.4053 26 15.5493V16.4493C26 16.5942 25.9778 16.7444 25.9333 16.9L28.4333 18.8C28.7 19 28.8667 19.2667 28.9333 19.6C29 19.9333 28.9444 20.2444 28.7667 20.5333L26.3 24.8C26.1222 25.0889 25.8724 25.2836 25.5506 25.384C25.228 25.4836 24.9111 25.4778 24.6 25.3667L21.7667 24.1667C21.5222 24.3444 21.2666 24.5111 21 24.6667C20.7333 24.8222 20.4666 24.9556 20.2 25.0667L19.8 28.1667C19.7555 28.5 19.6111 28.7778 19.3666 29C19.1222 29.2222 18.8333 29.3333 18.5 29.3333ZM16.0666 20.6667C17.3555 20.6667 18.4555 20.2111 19.3666 19.3C20.2778 18.3889 20.7333 17.2889 20.7333 16C20.7333 14.7111 20.2778 13.6111 19.3666 12.7C18.4555 11.7889 17.3555 11.3333 16.0666 11.3333C14.7555 11.3333 13.6498 11.7889 12.7493 12.7C11.8498 13.6111 11.4 14.7111 11.4 16C11.4 17.2889 11.8498 18.3889 12.7493 19.3C13.6498 20.2111 14.7555 20.6667 16.0666 20.6667Z" fill="#757575" />
+                            </svg>
+
+                            </div>
+                            <div className="frm132txt">
+                                Settings
+                            </div>
+                        </div>
 
 
                     </div>
-                    <div className="part1-4">
-                        <div className="d">
-                            <span></span><h1>Bucket List</h1></div></div>
-                    <div className="part1-5"><div className="d">
-                        <span></span><h1>Transaction</h1></div></div>
-                    <div className="part1-6"> <div className="d">
-                        <span></span><h1>Settings</h1></div>
+
+
+                    <div className="frm138">
                     </div>
-                    <div className="part1-7"></div>
-                    <div className="part1-8"> <div className="d">
-                        <span></span>Logout</div>
+
+                    <div className="frm136">
+                        <div className="frm136-1">
+                            <div className="frm136logo"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M6.66665 29.3333C6.31302 29.3333 5.97389 29.1929 5.72384 28.9428C5.47379 28.6928 5.33331 28.3536 5.33331 28V3.99999C5.33331 3.64637 5.47379 3.30723 5.72384 3.05718C5.97389 2.80713 6.31302 2.66666 6.66665 2.66666H25.3333C25.6869 2.66666 26.0261 2.80713 26.2761 3.05718C26.5262 3.30723 26.6666 3.64637 26.6666 3.99999V28C26.6666 28.3536 26.5262 28.6928 26.2761 28.9428C26.0261 29.1929 25.6869 29.3333 25.3333 29.3333H6.66665ZM20 21.3333L26.6666 16L20 10.6667V14.6667H12V17.3333H20V21.3333Z" fill="#FF5E5E" />
+                            </svg>
+
+                            </div>
+                            <div className="frm136txt">
+                                Logout
+                            </div>
+                        </div>
                     </div>
+
+
                 </div>
-
-                <span></span>
                 <div className="part2">
-                    <h1>Hello Harsha,</h1>
-                    <span><p>Escape into the adventure that awaits</p></span>
-                    <div className="image">
-                        <div className="p1"><img src="https://shorturl.at/jzJO0" alt="1" /></div>
-
-                        <div className="p2"><img src="https://shorturl.at/jzJO0" alt="2" /></div>
-                        <div className="p3"><img src="https://shorturl.at/jzJO0" alt="3" /></div>
+                    <div className="frm140">
+                        <div className="t11">Hello Harsha,</div>
+                        <div className="t2">Escape into the adventure that awaits</div>
                     </div>
-                    <div className="p22">
-                        <h1>Discover Adventures</h1>
-                        <div className="p33">
+                    <div className="gal">
+                        <div className="frm38">
+                            <div className="img38">
+                                <div className="ico38f">
+                                    <div className="ico38"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                        <path d="M11.1814 2.69104C10.0226 2.69104 8.91052 3.23045 8.18464 4.08286C7.45877 3.23045 6.34665 2.69104 5.18791 2.69104C3.13681 2.69104 1.52524 4.30262 1.52524 6.35371C1.52524 8.87097 3.78944 10.9221 7.21903 14.0387L8.18464 14.9111L9.15026 14.032C12.5799 10.9221 14.8441 8.87097 14.8441 6.35371C14.8441 4.30262 13.2325 2.69104 11.1814 2.69104ZM8.25124 13.0464L8.18464 13.113C8.18464 13.113 9.25016 14.6114 8.11805 13.0464C6.98594 11.4815 16.7087 6.22053 5.78724 7.08625C5.38768 8.68451 8.451 7.88538 9.78289 7.88538C10.8084 7.88538 7.21237 4.6822 7.56532 5.59454L8.11805 14.0387C8.46434 13.1263 10.1558 11.4815 11.1814 11.4815C12.5133 11.4815 13.636 6.35371 12.9794 6.28712C11.3811 6.62009 11.4211 10.1762 8.25124 13.0464Z" fill="white" />
+                                    </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="frm39">
+                            <div className="img39">
+                                <div className="ico38f">
+                                    <div className="ico38"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                        <path d="M11.1814 2.69104C10.0226 2.69104 8.91052 3.23045 8.18464 4.08286C7.45877 3.23045 6.34665 2.69104 5.18791 2.69104C3.13681 2.69104 1.52524 4.30262 1.52524 6.35371C1.52524 8.87097 3.78944 10.9221 7.21903 14.0387L8.18464 14.9111L9.15026 14.032C12.5799 10.9221 14.8441 8.87097 14.8441 6.35371C14.8441 4.30262 13.2325 2.69104 11.1814 2.69104ZM8.25124 13.0464L8.18464 13.113C8.18464 13.113 9.25016 14.6114 8.11805 13.0464C6.98594 11.4815 16.7087 6.22053 5.78724 7.08625C5.38768 8.68451 8.451 7.88538 9.78289 7.88538C10.8084 7.88538 7.21237 4.6822 7.56532 5.59454L8.11805 14.0387C8.46434 13.1263 10.1558 11.4815 11.1814 11.4815C12.5133 11.4815 13.636 6.35371 12.9794 6.28712C11.3811 6.62009 11.4211 10.1762 8.25124 13.0464Z" fill="white" />
+                                    </svg>
+                                    </div>
+                                </div></div></div>
+                        <div className="frm40">
+                            <div className="img40">
+                                <div className="ico38f">
+                                    <div className="ico38"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                        <path d="M11.1814 2.69104C10.0226 2.69104 8.91052 3.23045 8.18464 4.08286C7.45877 3.23045 6.34665 2.69104 5.18791 2.69104C3.13681 2.69104 1.52524 4.30262 1.52524 6.35371C1.52524 8.87097 3.78944 10.9221 7.21903 14.0387L8.18464 14.9111L9.15026 14.032C12.5799 10.9221 14.8441 8.87097 14.8441 6.35371C14.8441 4.30262 13.2325 2.69104 11.1814 2.69104ZM8.25124 13.0464L8.18464 13.113C8.18464 13.113 9.25016 14.6114 8.11805 13.0464C6.98594 11.4815 16.7087 6.22053 5.78724 7.08625C5.38768 8.68451 8.451 7.88538 9.78289 7.88538C10.8084 7.88538 7.21237 4.6822 7.56532 5.59454L8.11805 14.0387C8.46434 13.1263 10.1558 11.4815 11.1814 11.4815C12.5133 11.4815 13.636 6.35371 12.9794 6.28712C11.3811 6.62009 11.4211 10.1762 8.25124 13.0464Z" fill="white" />
+                                    </svg>
+                                    </div>
+                                </div>
 
-                            <div className="p4"><img src="" alt="4" /></div>
-                            <div className="p5"><img src="" alt="5" /></div>
-                            <div className="p6"><img src="" alt="6" /></div>
-                            <div className="p7"><img src="" alt="7" /></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="adv">
+                        <div className="advt">Discover Adventures</div>
+                        <div className="frm165">
+                            <div className="frm1">
+                                <div className="frm155">
+                                    <div className="frm151">
+                                        <div className="frm148">
+                                        </div>
+                                        <div className="frm125">
+                                            <div className="t2">Best of India</div>
+                                            <div className="t1">1200+ Adventurers recommend this</div>
+                                            <div className="t1">Starting at ₹5,999  </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="157">
+                                    <div className="frm156">
+                                        <div className="log"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M10.65 19.8L8.925 18.225C7.15833 16.6083 5.56233 15.004 4.137 13.412C2.71167 11.82 1.99933 10.066 2 8.15C2 6.58334 2.525 5.275 3.575 4.225C4.625 3.175 5.93333 2.65 7.5 2.65C8.38333 2.65 9.21667 2.83734 10 3.212C10.7833 3.58667 11.45 4.09934 12 4.75C12.55 4.1 13.2167 3.58734 14 3.212C14.7833 2.83667 15.6167 2.64934 16.5 2.65C18.0667 2.65 19.375 3.175 20.425 4.225C21.475 5.275 22 6.58334 22 8.15C22 10.0667 21.2917 11.825 19.875 13.425C18.4583 15.025 16.85 16.6333 15.05 18.25L13.35 19.8C12.9667 20.15 12.5167 20.325 12 20.325C11.4833 20.325 11.0333 20.15 10.65 19.8Z" fill="white" />
+                                        </svg></div>
+                                        <div className="lt">Add to Bucket</div></div>
+
+                                </div>
+                            </div>
+                            <div className="frm2"><div className="frm155">
+                                <div className="frm151">
+                                    <div className="frm148">
+                                    </div>
+                                    <div className="frm125">
+                                        <div className="t2">Best of Dubai</div>
+                                        <div className="t1">1200+ Adventurers recommend this</div>
+                                        <div className="t1">Starting at ₹29,999    </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div className="157">
+                                    <div className="frm156">
+                                        <div className="log"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M10.65 19.8L8.925 18.225C7.15833 16.6083 5.56233 15.004 4.137 13.412C2.71167 11.82 1.99933 10.066 2 8.15C2 6.58334 2.525 5.275 3.575 4.225C4.625 3.175 5.93333 2.65 7.5 2.65C8.38333 2.65 9.21667 2.83734 10 3.212C10.7833 3.58667 11.45 4.09934 12 4.75C12.55 4.1 13.2167 3.58734 14 3.212C14.7833 2.83667 15.6167 2.64934 16.5 2.65C18.0667 2.65 19.375 3.175 20.425 4.225C21.475 5.275 22 6.58334 22 8.15C22 10.0667 21.2917 11.825 19.875 13.425C18.4583 15.025 16.85 16.6333 15.05 18.25L13.35 19.8C12.9667 20.15 12.5167 20.325 12 20.325C11.4833 20.325 11.0333 20.15 10.65 19.8Z" fill="white" />
+                                        </svg></div>
+                                        <div className="lt">Add to Bucket</div></div>
+
+                                </div></div>
+                            <div className="frm3"><div className="frm155">
+                                <div className="frm151">
+                                    <div className="frm148">
+                                    </div>
+                                    <div className="frm125">
+                                        <div className="t2">Best of South Asia</div>
+                                        <div className="t1">1200+ Adventurers recommend this</div>
+                                        <div className="t1">Starting at ₹36,999   </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div className="157">
+                                    <div className="frm156">
+                                        <div className="log"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M10.65 19.8L8.925 18.225C7.15833 16.6083 5.56233 15.004 4.137 13.412C2.71167 11.82 1.99933 10.066 2 8.15C2 6.58334 2.525 5.275 3.575 4.225C4.625 3.175 5.93333 2.65 7.5 2.65C8.38333 2.65 9.21667 2.83734 10 3.212C10.7833 3.58667 11.45 4.09934 12 4.75C12.55 4.1 13.2167 3.58734 14 3.212C14.7833 2.83667 15.6167 2.64934 16.5 2.65C18.0667 2.65 19.375 3.175 20.425 4.225C21.475 5.275 22 6.58334 22 8.15C22 10.0667 21.2917 11.825 19.875 13.425C18.4583 15.025 16.85 16.6333 15.05 18.25L13.35 19.8C12.9667 20.15 12.5167 20.325 12 20.325C11.4833 20.325 11.0333 20.15 10.65 19.8Z" fill="white" />
+                                        </svg></div>
+                                        <div className="lt">Add to Bucket</div></div>
+
+                                </div></div>
+                            <div className="frm4"><div className="frm155">
+                                <div className="frm151">
+                                    <div className="frm148">
+                                    </div>
+                                    <div className="frm125">
+                                        <div className="t2">Best of Europe</div>
+                                        <div className="t1">1200+ Adventurers recommend this</div>
+                                        <div className="t1">Starting at ₹36,999   </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <div className="157">
+                                    <div className="frm156">
+                                        <div className="log"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M10.65 19.8L8.925 18.225C7.15833 16.6083 5.56233 15.004 4.137 13.412C2.71167 11.82 1.99933 10.066 2 8.15C2 6.58334 2.525 5.275 3.575 4.225C4.625 3.175 5.93333 2.65 7.5 2.65C8.38333 2.65 9.21667 2.83734 10 3.212C10.7833 3.58667 11.45 4.09934 12 4.75C12.55 4.1 13.2167 3.58734 14 3.212C14.7833 2.83667 15.6167 2.64934 16.5 2.65C18.0667 2.65 19.375 3.175 20.425 4.225C21.475 5.275 22 6.58334 22 8.15C22 10.0667 21.2917 11.825 19.875 13.425C18.4583 15.025 16.85 16.6333 15.05 18.25L13.35 19.8C12.9667 20.15 12.5167 20.325 12 20.325C11.4833 20.325 11.0333 20.15 10.65 19.8Z" fill="white" />
+                                        </svg></div>
+                                        <div className="lt">Add to Bucket</div></div>
+
+                                </div></div>
+                        </div>
+
+
 
                     </div>
-
                 </div>
-                <span></span>
                 <div className="part3">
-                    <div className="frm">
-                        <input type="search" name="search" id="search" placeholder='Search Adventures' />
+                    <div className="sb">
+                        <div className="frm141">
+                            <div className="sl"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M20.6667 18.6667H19.6133L19.24 18.3067C20.5918 16.7387 21.3348 14.7369 21.3333 12.6667C21.3333 10.9526 20.825 9.27696 19.8727 7.85173C18.9204 6.4265 17.5669 5.31567 15.9833 4.65971C14.3996 4.00376 12.6571 3.83213 10.9759 4.16653C9.29472 4.50094 7.75047 5.32636 6.53841 6.53841C5.32636 7.75047 4.50094 9.29472 4.16653 10.9759C3.83213 12.6571 4.00376 14.3996 4.65971 15.9833C5.31567 17.5669 6.4265 18.9204 7.85173 19.8727C9.27696 20.825 10.9526 21.3333 12.6667 21.3333C14.8133 21.3333 16.7867 20.5467 18.3067 19.24L18.6667 19.6133V20.6667L25.3333 27.32L27.32 25.3333L20.6667 18.6667ZM12.6667 18.6667C9.34667 18.6667 6.66667 15.9867 6.66667 12.6667C6.66667 9.34667 9.34667 6.66667 12.6667 6.66667C15.9867 6.66667 18.6667 9.34667 18.6667 12.6667C18.6667 15.9867 15.9867 18.6667 12.6667 18.6667Z" fill="#9E9E9E" />
+                            </svg></div>
+                            <div className="st">Search Adventures</div>
+                        </div>
+
                     </div>
-                    <div className="call">
-                        <h1>Seren Calender</h1>
-                        <div className="calender">
+                    <div className="frm170">
+                        <div className="frm144">
+                            <div className="calt">Serene Calender</div>
+                            <div className="calender">
+                                <div className="rectangle">
+                                    <div className="frm147">
+                                        <div className="frm145">
+                                            <div className="t145">May</div>
+                                            <div className="tlog"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                                <path d="M15.1664 19.4003L11.7271 15.961C11.3082 15.5421 11.2147 15.0628 11.4467 14.5231C11.6786 13.9834 12.0918 13.7131 12.6861 13.7122H19.4986C20.0939 13.7122 20.5075 13.9825 20.7394 14.5231C20.9713 15.0637 20.8774 15.543 20.4576 15.961L17.0183 19.4003C16.8861 19.5326 16.7428 19.6318 16.5884 19.698C16.4341 19.7641 16.2687 19.7972 16.0924 19.7972C15.916 19.7972 15.7506 19.7641 15.5963 19.698C15.442 19.6318 15.2987 19.5326 15.1664 19.4003Z" fill="#1B9874" />
+                                            </svg></div>
+                                        </div>
+                                        <div className="frm145 k">
+                                            <div className="t145">2023</div>
+                                            <div className="tlog"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                                <path d="M15.1664 19.4003L11.7271 15.961C11.3082 15.5421 11.2147 15.0628 11.4467 14.5231C11.6786 13.9834 12.0918 13.7131 12.6861 13.7122H19.4986C20.0939 13.7122 20.5075 13.9825 20.7394 14.5231C20.9713 15.0637 20.8774 15.543 20.4576 15.961L17.0183 19.4003C16.8861 19.5326 16.7428 19.6318 16.5884 19.698C16.4341 19.7641 16.2687 19.7972 16.0924 19.7972C15.916 19.7972 15.7506 19.7641 15.5963 19.698C15.442 19.6318 15.2987 19.5326 15.1664 19.4003Z" fill="#1B9874" />
+                                            </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="tab">
+                                        <div className="h1">
+                                            <div className="h2">Mo</div>
+                                            <div className="h2">Tu</div>
+                                            <div className="h2">we</div>
+                                            <div className="h2">Th</div>
+                                            <div className="h2">Fr</div>
+                                            <div className="h2">Sa</div>
+                                            <div className="h2 ">Su</div>
+                                        </div>
+                                        <div className="h3">
+                                            <div className="r1">30</div>
+                                            <div className="r1">1</div>
+                                            <div className="r1">2</div>
+                                            <div className="r1">3</div>
+                                            <div className="r1">4</div>
+                                            <div className="r1">5</div>
+                                            <div className="r1 s">6</div>
+
+                                        </div>
+                                        <div className="h3">
+                                            <div className="r1">7</div>
+                                            <div className="r1">8</div>
+                                            <div className="r1 c">9</div>
+                                            <div className="r1 f">10</div>
+                                            <div className="r1 m f">11</div>
+                                            <div className="r1 c">12</div>
+                                            <div className="r1  s">13</div>
+
+                                        </div>
+                                        <div className="h3">
+                                            <div className="r1">12</div>
+                                            <div className="r1">13</div>
+                                            <div className="r1">14</div>
+                                            <div className="r1">15</div>
+                                            <div className="r1">16</div>
+                                            <div className="r1">17</div>
+                                            <div className="r1 s">18</div>
+
+                                        </div>
+                                        <div className="h3">
+                                            <div className="r1">19</div>
+                                            <div className="r1">20</div>
+                                            <div className="r1">21</div>
+                                            <div className="r1">22</div>
+                                            <div className="r1">23</div>
+                                            <div className="r1">24</div>
+                                            <div className="r1 s">25</div>
+
+                                        </div>
+                                        <div className="h3">
+                                            <div className="r1">26</div>
+                                            <div className="r1">27</div>
+                                            <div className="r1">28</div>
+                                            <div className="r1">29</div>
+                                            <div className="r1">30</div>
+                                            <div className="r1">31</div>
+                                            <div className="r1 k">1</div>
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+
+
+
+
+                            </div>
 
 
 
                         </div>
                     </div>
-                    <div className="eve">
-                        <h1>Upcoming Adventures</h1>
-                        <div className="d1">
-                            <div className="d11"></div>
-                            <div className="d12"></div>
+                    <div className="frm169">
+                        <div className="frm168">
+                            <div className="uad">Upcoming Adventures</div>
 
                         </div>
-                        <div className="d2">
-                            <div className="d21"></div>
-                            <div className="d22"></div>
+                        <div className="frm167">
+                            <div className="frm151">
+                                <div className="log151"></div>
+                                <div className="frm125">
+                                    <div className="t1a">Japan Dairies</div>
+                                    <div className="t2b">1200+ Adventurers recommend this</div>
+                                    <div className="t3c  ">Starting at ₹5,999 </div>
+                                </div>
+                            </div>
+                            <div className="frm151">
+                                <div className="log151"></div>
+                                <div className="frm125">
+                                    <div className="t1a">Gokarana</div>
+                                    <div className="t2b">1200+ Adventurers recommend this</div>
+                                    <div className="t3c  ">Starting at ₹5,999  </div>
+                                </div>
+                            </div>
+                            <div className="frm151">
+                                <div className="log151"></div>
+                                <div className="frm125">
+                                    <div className="t1a">Discover Goa</div>
+                                    <div className="t2b">1200+ Adventurers recommend this</div>
+                                    <div className="t3c  ">Starting at ₹5,999 </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <div className="d3">
-                            <div className="d31"></div>
-                            <div className="d32"></div>
-                        </div>
+
+
                     </div>
                 </div>
+
             </div>
+
+
+
+
+
         </div>
 
-    )
 
+
+
+
+
+    )
 }
