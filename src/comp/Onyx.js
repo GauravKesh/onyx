@@ -395,10 +395,5 @@ export default function Onyx() {
 
         </div>
 
-
-
-
-
-
     )
 }
